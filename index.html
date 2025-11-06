@@ -711,4 +711,1314 @@
 
         .support-modal-content {
             background-color: var(--color-secondary);
-            marg
+            margin: 5% auto;
+            padding: 40px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: var(--shadow-xl);
+            animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .support-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: var(--color-text-dark);
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .support-modal-close:hover {
+            color: var(--color-primary);
+            transform: scale(1.2);
+        }
+
+        .support-modal h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8em;
+            color: var(--color-text-dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .support-modal p {
+            color: var(--color-text-light);
+            margin-bottom: 25px;
+            font-size: 0.95em;
+        }
+
+        .support-questions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .support-question-btn {
+            background: var(--color-bg-light);
+            border: 2px solid var(--color-primary-light);
+            color: var(--color-text-dark);
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: left;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+
+        .support-question-btn:hover {
+            background: var(--color-primary-light);
+            color: var(--color-secondary);
+            transform: translateX(5px);
+            border-color: var(--color-primary);
+        }
+
+        .support-question-btn i {
+            margin-right: 10px;
+            color: var(--color-primary);
+        }
+
+        .support-question-btn:hover i {
+            color: var(--color-secondary);
+        }
+
+        /* ===== BOTÃO FLUTUANTE DE SUPORTE ===== */
+        .floating-support-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: var(--color-secondary);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .floating-support-btn:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .floating-support-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* ===== MODAL DE HISTÓRIA ===== */
+        .history-modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            overflow: auto;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .history-modal.show {
+            display: block;
+        }
+
+        .history-modal-content {
+            background-color: var(--color-secondary);
+            margin: 5% auto;
+            padding: 40px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: var(--shadow-xl);
+            max-height: 80vh;
+            overflow-y: auto;
+            animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .history-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: var(--color-text-dark);
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .history-modal-close:hover {
+            color: var(--color-primary);
+            transform: scale(1.2);
+        }
+
+        .history-modal h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2em;
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .history-modal p {
+            color: var(--color-text-light);
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        /* ===== MODAL DE TRANSPORTE ===== */
+        .transport-modal {
+            display: none;
+            position: fixed;
+            z-index: 2500;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            overflow: auto;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .transport-modal.show {
+            display: block;
+        }
+
+        .transport-modal-content {
+            background-color: var(--color-secondary);
+            margin: 10% auto;
+            padding: 40px;
+            border-radius: 16px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: var(--shadow-xl);
+            animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            border-left: 6px solid #ff9800;
+        }
+
+        .transport-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: var(--color-text-dark);
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .transport-modal-close:hover {
+            color: #ff9800;
+            transform: scale(1.2);
+        }
+
+        .transport-modal-icon {
+            font-size: 3em;
+            color: #ff9800;
+            margin-bottom: 15px;
+        }
+
+        .transport-modal h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8em;
+            color: var(--color-text-dark);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .transport-modal p {
+            color: var(--color-text-light);
+            margin-bottom: 15px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .transport-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .btn-transport {
+            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+            color: var(--color-secondary);
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn-transport:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+        }
+
+        .btn-transport-secondary {
+            background: var(--color-bg-light);
+            color: var(--color-text-dark);
+            border: 2px solid #ff9800;
+        }
+
+        .btn-transport-secondary:hover {
+            background: #ff9800;
+            color: var(--color-secondary);
+        }
+
+        /* ===== RESPONSIVIDADE ===== */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.3em; }
+            .header-subtitle { font-size: 0.75em; }
+            .carousel { height: 280px; }
+            .carousel-item h2 { font-size: 1.8em; }
+            .carousel-item { padding: 25px; }
+            .section-header h2 { font-size: 1.8em; }
+            .poi-list { grid-template-columns: 1fr; gap: 20px; }
+            .planning-section { padding: 40px 20px; }
+            .planning-section h2 { font-size: 1.6em; }
+            .external-links { grid-template-columns: 1fr; }
+            .modal-content { width: 95%; margin: 10% auto; }
+            .modal-body { padding: 25px; }
+            .modal-body h2 { font-size: 1.5em; }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 { font-size: 1.1em; }
+            .header-logo-img { width: 40px; height: 40px; font-size: 1.5em; }
+            .carousel { height: 220px; }
+            .carousel-item h2 { font-size: 1.4em; }
+            .carousel-item { padding: 20px; }
+            .section-header h2 { font-size: 1.5em; }
+            .poi-content { padding: 15px; }
+            .poi-actions { flex-direction: column; }
+            .btn { padding: 10px 15px; font-size: 0.9em; }
+            .modal-content { width: 98%; margin: 20% auto; max-height: 90vh; }
+            .modal-header { height: 200px; }
+            .modal-body { padding: 20px; }
+            .info-box { padding: 15px; }
+            .floating-support-btn { width: 55px; height: 55px; bottom: 20px; right: 20px; font-size: 1.5em; }
+            .support-modal-content { width: 95%; padding: 25px; margin: 20% auto; }
+            .support-modal h3 { font-size: 1.4em; }
+            .history-modal-content { width: 95%; padding: 25px; margin: 20% auto; }
+            .transport-modal-content { width: 95%; padding: 25px; margin: 20% auto; }
+        }
+
+        /* ===== ANIMAÇÕES ===== */
+        .poi-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== SCROLL SMOOTH ===== */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--color-bg-light);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--color-primary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--color-primary-dark);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                <div class="header-logo-img">
+                    <i class="fas fa-map-pin"></i>
+                </div>
+                <div class="header-title">
+                    <h1>CLICKCIDADE</h1>
+                    <p class="header-subtitle">Guia de Turismo</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="header-btn" onclick="openHistoryModal()" title="História de Jaguariaíva">
+                    <i class="fas fa-book"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main class="container">
+        
+        <!-- ===== SEÇÃO HERO COM CARROSSEL ===== -->
+        <section class="hero-section">
+            <div class="carousel" id="main-carousel">
+                <div class="carousel-inner">
+                    <!-- Os itens do carrossel serão injetados via JavaScript -->
+                </div>
+                <div class="carousel-indicators">
+                    <!-- Os indicadores serão injetados via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SEÇÃO DE PONTOS TURÍSTICOS ===== -->
+        <section class="poi-section">
+            <div class="section-header">
+                <h2>Principais Pontos Turísticos</h2>
+                <p>Descubra os destinos mais visitados e apreciados de Jaguariaíva. Cada local oferece uma experiência única em contato com a natureza.</p>
+            </div>
+            <div class="poi-list" id="poi-list">
+                <!-- Os cards dos pontos turísticos serão injetados via JavaScript -->
+            </div>
+        </section>
+
+        <!-- ===== SEÇÃO DE PLANEJAMENTO ===== -->
+        <section class="planning-section">
+            <div class="container">
+                <h2>Planeje sua Viagem</h2>
+                <p>Encontre hospedagem, restaurantes e informações sobre o clima para aproveitar ao máximo sua visita a Jaguariaíva.</p>
+                <div class="external-links">
+                    <a href="https://www.google.com/maps/search/hoteis+jaguariaiva" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-hotel"></i>
+                        <span>Onde Ficar</span>
+                    </a>
+                    <a href="https://www.google.com/maps/search/restaurantes+jaguariaiva" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-utensils"></i>
+                        <span>Onde Comer</span>
+                    </a>
+                    <a href="https://www.climatempo.com.br/previsao-do-tempo/cidade/321/jaguariaiva-pr" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-cloud-sun"></i>
+                        <span>Previsão do Tempo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== MODAL DE DETALHES ===== -->
+    <div id="detail-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close-button">&times;</span>
+                <div class="carousel" style="height: 100%;">
+                    <div class="carousel-inner" id="modal-carousel">
+                        <!-- Imagens do carrossel serão injetadas aqui -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Conteúdo de detalhes será injetado aqui -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MODAL DE SUPORTE DE TURISMO ===== -->
+    <div id="support-modal" class="support-modal">
+        <div class="support-modal-content">
+            <button class="support-modal-close" onclick="closeSupportModal()">&times;</button>
+            <h3>Suporte de Turismo</h3>
+            <p>Tem alguma dúvida sobre os pontos turísticos? Envie uma mensagem para nosso suporte via WhatsApp!</p>
+            <div class="support-questions" id="support-questions">
+                <!-- As perguntas pré-formatadas serão injetadas aqui -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== BOTÃO FLUTUANTE DE SUPORTE ===== -->
+    <button class="floating-support-btn" onclick="openSupportModal()" title="Suporte de Turismo">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- ===== MODAL DE HISTÓRIA ===== -->
+    <div id="history-modal" class="history-modal">
+        <div class="history-modal-content">
+            <button class="history-modal-close" onclick="closeHistoryModal()">&times;</button>
+            <h2>A História de Jaguariaíva</h2>
+            <p>
+                Jaguariaíva é um município localizado na região dos Campos Gerais do estado do Paraná, a aproximadamente 230 km de Curitiba. Seu nome tem origem indígena, significando "rio da onça" ou "água da onça", refletindo a riqueza natural e a fauna característica da região.
+            </p>
+            <p>
+                Fundada no século XVII, Jaguariaíva possui uma história rica marcada pela ocupação indígena, pela colonização portuguesa e pelo desenvolvimento econômico baseado na agricultura e pecuária. A região é conhecida por sua importância histórica e cultural, sendo um ponto estratégico nos Campos Gerais.
+            </p>
+            <p>
+                Atualmente, Jaguariaíva é um destino turístico de destaque, famoso por suas belezas naturais, cachoeiras, parques estaduais e pela preservação de ecossistemas únicos como o Cerrado. A cidade oferece uma experiência autêntica de contato com a natureza, atraindo visitantes em busca de aventura, tranquilidade e conhecimento sobre a biodiversidade paranaense.
+            </p>
+            <p>
+                Os principais pontos turísticos refletem a importância ambiental da região: o Parque Estadual do Vale do Codó, o Parque Estadual do Cerrado e o Parque Municipal Lago Azul são exemplos de áreas preservadas que permitem aos turistas vivenciar a riqueza natural de Jaguariaíva.
+            </p>
+        </div>
+    </div>
+
+    <!-- ===== MODAL DE TRANSPORTE ===== -->
+    <div id="transport-modal" class="transport-modal">
+        <div class="transport-modal-content">
+            <button class="transport-modal-close" onclick="closeTransportModal()">&times;</button>
+            <div class="transport-modal-icon">
+                <i class="fas fa-bus"></i>
+            </div>
+            <h3>Informação Importante sobre Transporte</h3>
+            <p>
+                <strong>Transporte Público em Jaguariaíva:</strong> Os ônibus urbanos da cidade não aceitam pagamento em dinheiro em espécie. Para utilizar o transporte público, é necessário adquirir um cartão de transporte junto à empresa concessionária.
+            </p>
+            <p>
+                Se você precisa de transporte durante sua estadia em Jaguariaíva, a <strong>JC Transportes</strong> oferece serviços de táxi com segurança e comodidade. Solicite uma corrida através do WhatsApp e aproveite uma viagem confortável!
+            </p>
+            <div class="transport-actions">
+                <button class="btn-transport" onclick="requestRide()">
+                    <i class="fas fa-taxi"></i> Solicitar Corrida (JC Transportes)
+                </button>
+                <button class="btn-transport btn-transport-secondary" onclick="closeTransportModal()">
+                    <i class="fas fa-times"></i> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script>
+        // ===== DADOS DOS PONTOS TURÍSTICOS (Embutido) =====
+        // INSTRUÇÕES DE EDIÇÃO:
+        // 1. Para alterar DESCRIÇÕES: Edite apenas o texto entre as aspas duplas
+        // 2. Para alterar IMAGENS: Substitua a URL entre as aspas duplas
+        // 3. Para alterar COORDENADAS: Substitua apenas os números
+        // 4. IMPORTANTE: Nunca use aspas duplas (\" ) dentro de um texto. Use aspas simples (') ou escape com barra invertida (\\\").
+        // 5. Não adicione ou remova vírgulas, colchetes ou chaves.
+        
+        const POI_DATA = [
+          {
+            "id": "lago_azul",
+            "nome": "Parque Estadual Lago Azul",
+            "descricao_curta": "Um dos destinos mais populares de Jaguariaíva",
+            "descricao_longa": "Um dos destinos mais populares de Jaguariaíva, o Parque Municipal Lago Azul é famoso por sua cachoeira de aproximadamente 20 metros e o poço de águas cristalinas, ideal para banho. É um local de fácil acesso e excelente para um dia em família.",
+            "latitude": -24.276103,
+            "longitude":  -49.693494,
+            "imagens": [
+              "https://caminhosmelevem.com/wp-content/uploads/2021/06/jaguariaiva-parana-14.jpg",
+              "https://c2.staticflickr.com/2/1902/30448939727_1167d897d3_b.jpg"
+            ],
+            "informacoes_adicionais": {
+              "horario": "8h às 17h (a confirmar)",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Fácil"
+            }
+          },
+          {
+            "id": "vale_do_codo",
+            "nome": "Parque Estadual do Vale do Codó (PEVC)",
+            "descricao_curta": "Unidade de Conservação com cachoeiras e mirantes.",
+            "descricao_longa": "O acesso à região do Parque Estadual Vale do Codó pode ser feito pela rodovia PR-151. Partindo de Ponta Grossa, no sentido Sengés, nas proximidades da área urbana do município de Jaguariaíva, no km 211 é possível adentrar numa estrada vicinal, sem pavimentação.",
+            "latitude": -24.3944,
+            "longitude": -49.8166,
+            "imagens": [
+              "https://upload.wikimedia.org/wikipedia/commons/b/b7/Paisagem_em_Jaguaria%C3%ADva-PR.jpg",
+              "https://s1.wklcdn.com/image_288/8661308/91116827/59521789.700x525.jpg"
+            ],
+            "informacoes_adicionais": {
+              "horario": "8h às 17h (a confirmar)",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Moderada a Difícil"
+            }
+          },
+          {
+            "id": "cerrado",
+            "nome": "Parque Estadual do Cerrado (PEC)",
+            "descricao_curta": "Área de preservação do bioma Cerrado e cachoeiras.",
+            "descricao_longa": "Localizado entre Jaguariaíva e Sengés, o PEC é uma área de preservação do bioma Cerrado, com vegetação típica e a Cachoeira do Cerrado. É um local crucial para a conservação da biodiversidade da região.",
+            "latitude": -24.24389,
+            "longitude":  -49.706642,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Cerrado+1",
+              "https://via.placeholder.com/600x400?text=Cerrado+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "A confirmar",
+              "taxa_entrada": "A confirmar",
+              "dificuldade_trilha": "Moderada"
+            }
+          },
+          {
+            "id": "cachoeira_do_lajeado",
+            "nome": "Cachoeira do Lajeado",
+            "descricao_curta": "Queda d'água impressionante com piscina natural.",
+            "descricao_longa": "A Cachoeira do Lajeado é um refúgio natural com uma queda d'água de aproximadamente 15 metros e um poço de águas claras, perfeito para um mergulho refrescante. O acesso é por trilha de dificuldade moderada.",
+            "latitude": -24.2800,
+            "longitude": -49.7500,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Cachoeira+Lajeado+1",
+              "https://via.placeholder.com/600x400?text=Cachoeira+Lajeado+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "9h às 16h",
+              "taxa_entrada": "R$ 10,00",
+              "dificuldade_trilha": "Moderada"
+            }
+          },
+          {
+            "id": "buraco_do_padre",
+            "nome": "Buraco do Padre (Jaguariaíva)",
+            "descricao_curta": "Formação rochosa única e paisagem de tirar o fôlego.",
+            "descricao_longa": "Embora o mais famoso esteja em Ponta Grossa, Jaguariaíva possui uma formação similar e menos explorada, com um anfiteatro natural e uma pequena queda d'água. Ideal para quem busca tranquilidade e contato com a natureza.",
+            "latitude": -24.2500,
+            "longitude": -49.6500,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Buraco+Padre+1",
+              "https://via.placeholder.com/600x400?text=Buraco+Padre+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "Livre acesso",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Fácil"
+            }
+          },
+          {
+            "id": "mirante_da_serra",
+            "nome": "Mirante da Serra",
+            "descricao_curta": "Vista panorâmica da cidade e da região dos Campos Gerais.",
+            "descricao_longa": "Localizado no ponto mais alto da região, o Mirante da Serra oferece uma vista espetacular, ideal para fotos e para apreciar o pôr do sol. O acesso é pavimentado e fácil.",
+            "latitude": -24.2400,
+            "longitude": -49.7100,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Mirante+Serra+1",
+              "https://via.placeholder.com/600x400?text=Mirante+Serra+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "24h",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Nenhuma"
+            }
+          },
+          {
+            "id": "parque_municipal_do_pinheiro",
+            "nome": "Parque Municipal do Pinheiro",
+            "descricao_curta": "Área verde urbana com trilhas leves e lazer.",
+            "descricao_longa": "Um parque dentro da área urbana, perfeito para caminhadas, piqueniques e atividades ao ar livre. Possui infraestrutura básica e é um ponto de encontro para a comunidade local.",
+            "latitude": -24.2350,
+            "longitude": -49.7000,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Parque+Pinheiro+1",
+              "https://via.placeholder.com/600x400?text=Parque+Pinheiro+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "6h às 19h",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Fácil"
+            }
+          },
+          {
+            "id": "cachoeira_do_cerrado_extra",
+            "nome": "Cachoeira do Cerrado (Trilha Secundária)",
+            "descricao_curta": "Trilha alternativa para a Cachoeira do Cerrado.",
+            "descricao_longa": "Uma trilha menos conhecida que leva à mesma cachoeira, ideal para aventureiros. Requer mais atenção e preparo físico. Fica dentro da área de preservação.",
+            "latitude": -24.2420,
+            "longitude": -49.7080,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Cachoeira+Cerrado+Extra+1",
+              "https://via.placeholder.com/600x400?text=Cachoeira+Cerrado+Extra+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "A confirmar",
+              "taxa_entrada": "A confirmar",
+              "dificuldade_trilha": "Difícil"
+            }
+          },
+          {
+            "id": "cachoeira_do_lajeado",
+            "nome": "Cachoeira do Lajeado",
+            "descricao_curta": "Queda d'água impressionante com piscina natural.",
+            "descricao_longa": "A Cachoeira do Lajeado é um refúgio natural com uma queda d'água de aproximadamente 15 metros e um poço de águas claras, perfeito para um mergulho refrescante. O acesso é por trilha de dificuldade moderada.",
+            "latitude": -24.2800,
+            "longitude": -49.7500,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Cachoeira+Lajeado+1",
+              "https://via.placeholder.com/600x400?text=Cachoeira+Lajeado+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "9h às 16h",
+              "taxa_entrada": "R$ 10,00",
+              "dificuldade_trilha": "Moderada"
+            }
+          },
+          {
+            "id": "buraco_do_padre",
+            "nome": "Buraco do Padre (Jaguariaíva)",
+            "descricao_curta": "Formação rochosa única e paisagem de tirar o fôlego.",
+            "descricao_longa": "Embora o mais famoso esteja em Ponta Grossa, Jaguariaíva possui uma formação similar e menos explorada, com um anfiteatro natural e uma pequena queda d'água. Ideal para quem busca tranquilidade e contato com a natureza.",
+            "latitude": -24.2500,
+            "longitude": -49.6500,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Buraco+Padre+1",
+              "https://via.placeholder.com/600x400?text=Buraco+Padre+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "Livre acesso",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Fácil"
+            }
+          },
+          {
+            "id": "mirante_da_serra",
+            "nome": "Mirante da Serra",
+            "descricao_curta": "Vista panorâmica da cidade e da região dos Campos Gerais.",
+            "descricao_longa": "Localizado no ponto mais alto da região, o Mirante da Serra oferece uma vista espetacular, ideal para fotos e para apreciar o pôr do sol. O acesso é pavimentado e fácil.",
+            "latitude": -24.2400,
+            "longitude": -49.7100,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Mirante+Serra+1",
+              "https://via.placeholder.com/600x400?text=Mirante+Serra+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "24h",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Nenhuma"
+            }
+          },
+          {
+            "id": "parque_municipal_do_pinheiro",
+            "nome": "Parque Municipal do Pinheiro",
+            "descricao_curta": "Área verde urbana com trilhas leves e lazer.",
+            "descricao_longa": "Um parque dentro da área urbana, perfeito para caminhadas, piqueniques e atividades ao ar livre. Possui infraestrutura básica e é um ponto de encontro para a comunidade local.",
+            "latitude": -24.2350,
+            "longitude": -49.7000,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Parque+Pinheiro+1",
+              "https://via.placeholder.com/600x400?text=Parque+Pinheiro+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "6h às 19h",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Fácil"
+            }
+          },
+          {
+            "id": "cachoeira_do_cerrado_extra",
+            "nome": "Cachoeira do Cerrado (Trilha Secundária)",
+            "descricao_curta": "Trilha alternativa para a Cachoeira do Cerrado.",
+            "descricao_longa": "Uma trilha menos conhecida que leva à mesma cachoeira, ideal para aventureiros. Requer mais atenção e preparo físico. Fica dentro da área de preservação.",
+            "latitude": -24.2420,
+            "longitude": -49.7080,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Cachoeira+Cerrado+Extra+1",
+              "https://via.placeholder.com/600x400?text=Cachoeira+Cerrado+Extra+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "A confirmar",
+              "taxa_entrada": "A confirmar",
+              "dificuldade_trilha": "Difícil"
+            }
+          },
+          {
+            "id": "museu_historico_municipal",
+            "nome": "Museu Histórico Municipal",
+            "descricao_curta": "Preserva a história e cultura de Jaguariaíva.",
+            "descricao_longa": "Localizado no centro da cidade, o museu abriga um acervo que conta a história da fundação e desenvolvimento de Jaguariaíva, com foco na ferrovia e na cultura local.",
+            "latitude": -24.2405,
+            "longitude": -49.6960,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Museu+Historico+1",
+              "https://via.placeholder.com/600x400?text=Museu+Historico+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "9h às 17h (segunda a sexta)",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Nenhuma"
+            }
+          },
+          {
+            "id": "igreja_matriz",
+            "nome": "Igreja Matriz Senhor Bom Jesus da Pedra Fria",
+            "descricao_curta": "Construção histórica e ponto de fé da cidade.",
+            "descricao_longa": "A principal igreja da cidade, com arquitetura imponente e rica em detalhes artísticos. É um marco histórico e religioso, central para a vida da comunidade.",
+            "latitude": -24.2390,
+            "longitude": -49.6955,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Igreja+Matriz+1",
+              "https://via.placeholder.com/600x400?text=Igreja+Matriz+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "Horário de missas",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Nenhuma"
+            }
+          },
+          {
+            "id": "estacao_ferroviaria",
+            "nome": "Antiga Estação Ferroviária",
+            "descricao_curta": "Patrimônio histórico que remete à era da ferrovia.",
+            "descricao_longa": "A estação ferroviária, hoje desativada para passageiros, é um importante ponto de memória da cidade, que se desenvolveu muito em função da linha férrea. O local é preservado e rende boas fotos.",
+            "latitude": -24.2410,
+            "longitude": -49.6980,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Estacao+Ferroviaria+1",
+              "https://via.placeholder.com/600x400?text=Estacao+Ferroviaria+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "Aberto para visitação externa",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Nenhuma"
+            }
+          },
+          {
+            "id": "ponte_de_pedra",
+            "nome": "Ponte de Pedra (Rio Capivari)",
+            "descricao_curta": "Ponte rústica e histórica sobre o Rio Capivari.",
+            "descricao_longa": "Uma ponte antiga construída em pedra, que oferece um cenário pitoresco e tranquilo. É um local popular para fotos e para apreciar a paisagem do rio.",
+            "latitude": -24.2600,
+            "longitude": -49.7200,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Ponte+Pedra+1",
+              "https://via.placeholder.com/600x400?text=Ponte+Pedra+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "24h",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Fácil"
+            }
+          },
+          {
+            "id": "recanto_das_araucarias",
+            "nome": "Recanto das Araucárias",
+            "descricao_curta": "Área de preservação com trilhas e exemplares de araucárias.",
+            "descricao_longa": "Um espaço dedicado à preservação da araucária, árvore símbolo do Paraná. Possui trilhas leves e é um ótimo local para educação ambiental e observação de pássaros.",
+            "latitude": -24.2700,
+            "longitude": -49.7300,
+            "imagens": [
+              "https://via.placeholder.com/600x400?text=Recanto+Araucarias+1",
+              "https://via.placeholder.com/600x400?text=Recanto+Araucarias+2"
+            ],
+            "informacoes_adicionais": {
+              "horario": "8h às 18h",
+              "taxa_entrada": "Gratuita",
+              "dificuldade_trilha": "Fácil"
+            }
+          }
+        ]
+        
+        // ===== INICIALIZAÇÃO ===== 
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPOIList(POI_DATA);
+            renderCarousel(POI_DATA);
+            setupModalHandlers();
+            setupHistoryModalHandlers();
+            setupTransportModalHandlers();
+            setupSupportModalHandlers();
+            showTransportModalOnLoad();
+            initializeFavoriteButtons();
+        });
+
+        /**
+         * Exibe mensagem de erro na página
+         * @param {string} message - Mensagem de erro
+         */
+        function showErrorMessage(message) {
+            const poiList = document.getElementById('poi-list');
+            poiList.innerHTML = `<p style="color: #d32f2f; text-align: center; padding: 20px;">${message}</p>`;
+        }
+
+        /**
+         * Renderiza a lista de Pontos Turísticos (POIs) como cards profissionais.
+         * @param {Array} pois - Lista de objetos de Pontos Turísticos.
+         */
+        function renderPOIList(pois) {
+            const poiListContainer = document.getElementById('poi-list');
+            poiListContainer.innerHTML = '';
+
+            pois.forEach((poi, index) => {
+                const card = document.createElement('div');
+                card.className = 'poi-card';
+                card.style.animationDelay = `${index * 0.1}s`;
+                
+                const imageUrl = poi.imagens[0] || 'https://via.placeholder.com/600x400';
+                const routeLink = `https://www.google.com/maps/dir/?api=1&destination=${poi.latitude},${poi.longitude}&travelmode=driving`;
+
+                // Simulação de dificuldade para badge
+                const dificuldade = poi.informacoes_adicionais.dificuldade_trilha;
+                const badgeText = dificuldade.includes('Fácil') ? '⭐ Fácil' : dificuldade.includes('Moderada') ? '⭐⭐ Moderada' : '⭐⭐⭐ Difícil';
+
+                card.innerHTML = `
+                    <div class="poi-image-wrapper">
+                        <img src="${imageUrl}" alt="Imagem de ${poi.nome}" class="poi-image" onerror="this.style.display='none'">
+                        <button class="btn-favorite" data-poi-id="${poi.id}" onclick="toggleFavorite('${poi.id}'); event.stopPropagation();" title="Adicionar aos favoritos">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <span class="poi-badge">${badgeText}</span>
+                        <div class="poi-rating">
+                            <span class="star">★</span>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <div class="poi-content">
+                        <h3>${poi.nome}</h3>
+                        <div class="poi-meta">
+                            <div class="poi-meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jaguariaíva, PR</span>
+                            </div>
+                            <div class="poi-meta-item">
+                                <i class="fas fa-mountain"></i>
+                                <span>${dificuldade}</span>
+                            </div>
+                        </div>
+                        <p>${poi.descricao_curta}</p>
+                        <div class="poi-actions">
+                            <button class="btn btn-details" onclick="showDetails('${poi.id}')">
+                                <i class="fas fa-info-circle"></i> Detalhes
+                            </button>
+                            <a href="${routeLink}" target="_blank" rel="noopener noreferrer" class="btn btn-route">
+                                <i class="fas fa-directions"></i> Rota
+                            </a>
+                        </div>
+                    </div>
+                `;
+                poiListContainer.appendChild(card);
+            });
+        }
+
+        /**
+         * Renderiza o carrossel de destaque (vitrine) com navegação automática.
+         * @param {Array} pois - Lista de objetos de Pontos Turísticos.
+         */
+        function renderCarousel(pois) {
+            const carouselInner = document.querySelector('.carousel-inner');
+            const carouselIndicators = document.querySelector('.carousel-indicators');
+            
+            const featuredPois = pois.slice(0, 3);
+
+            featuredPois.forEach((poi, index) => {
+                // Item do Carrossel
+                const item = document.createElement('div');
+                item.className = 'carousel-item';
+                item.style.backgroundImage = `linear-gradient(135deg, rgba(79, 121, 66, 0.3) 0%, rgba(62, 96, 54, 0.3) 100%), url(${poi.imagens[0] || 'https://via.placeholder.com/600x400'})`;
+                
+                const itemContent = document.createElement('div');
+                itemContent.className = 'carousel-item-content';
+                itemContent.innerHTML = `
+                    <h2>${poi.nome}</h2>
+                    <p>${poi.descricao_curta}</p>
+                `;
+                item.appendChild(itemContent);
+                carouselInner.appendChild(item);
+
+                // Indicador
+                const indicator = document.createElement('div');
+                indicator.className = 'indicator';
+                if (index === 0) {
+                    indicator.classList.add('active');
+                }
+                indicator.dataset.slideIndex = index;
+                indicator.addEventListener('click', () => goToSlide(index));
+                carouselIndicators.appendChild(indicator);
+            });
+
+            // Lógica do carrossel
+            let currentSlide = 0;
+            const totalSlides = featuredPois.length;
+
+            function updateCarousel() {
+                const offset = -currentSlide * 100;
+                carouselInner.style.transform = `translateX(${offset}%)`;
+                
+                document.querySelectorAll('.indicator').forEach((ind, index) => {
+                    ind.classList.toggle('active', index === currentSlide);
+                });
+            }
+
+            function goToSlide(index) {
+                currentSlide = index;
+                updateCarousel();
+            }
+
+            // Avança automaticamente a cada 6 segundos
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateCarousel();
+            }, 6000);
+
+            updateCarousel();
+        }
+
+        /**
+         * Exibe os detalhes de um POI em um modal profissional.
+         * @param {string} poiId - ID do Ponto Turístico.
+         */
+        function showDetails(poiId) {
+            const poi = POI_DATA.find(p => p.id === poiId);
+            if (!poi) return;
+
+            const modal = document.getElementById('detail-modal');
+            const modalBody = document.getElementById('modal-body');
+            const modalCarousel = document.getElementById('modal-carousel');
+            
+            // Renderiza o carrossel de imagens do detalhe
+            modalCarousel.innerHTML = '';
+            poi.imagens.forEach(img => {
+                const carouselItem = document.createElement('div');
+                carouselItem.className = 'carousel-item';
+                carouselItem.style.backgroundImage = `url(${img})`;
+                carouselItem.style.height = '100%';
+                modalCarousel.appendChild(carouselItem);
+            });
+
+            // Link para traçar rota no Google Maps
+            const routeLink = `https://www.google.com/maps/dir/?api=1&destination=${poi.latitude},${poi.longitude}&travelmode=driving`;
+
+            // Renderiza o conteúdo do modal
+            modalBody.innerHTML = `
+                <h2>${poi.nome}</h2>
+                
+                <p>${poi.descricao_longa}</p>
+
+                <div class="info-box">
+                    <p>
+                        <i class="fas fa-clock"></i>
+                        <strong>Horário de Funcionamento:</strong> ${poi.informacoes_adicionais.horario}
+                    </p>
+                    <p>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <strong>Taxa de Entrada:</strong> ${poi.informacoes_adicionais.taxa_entrada}
+                    </p>
+                    <p>
+                        <i class="fas fa-mountain"></i>
+                        <strong>Dificuldade da Trilha:</strong> ${poi.informacoes_adicionais.dificuldade_trilha}
+                    </p>
+                </div>
+
+                <a href="${routeLink}" target="_blank" rel="noopener noreferrer" class="btn-primary-large">
+                    <i class="fas fa-directions"></i> Traçar Rota para ${poi.nome}
+                </a>
+            `;
+
+            // Abre o modal com animação
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+
+            // Inicializa o carrossel do modal
+            initializeModalCarousel();
+        }
+
+        /**
+         * Inicializa o carrossel dentro do modal
+         */
+        function initializeModalCarousel() {
+            const modalCarousel = document.getElementById('modal-carousel');
+            const items = modalCarousel.querySelectorAll('.carousel-item');
+            
+            if (items.length <= 1) return;
+
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                const offset = -index * 100;
+                modalCarousel.style.transform = `translateX(${offset}%)`;
+            }
+
+            // Avança automaticamente a cada 5 segundos
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % items.length;
+                showSlide(currentIndex);
+            }, 5000);
+
+            showSlide(0);
+        }
+
+        /**
+         * Configura os manipuladores de eventos do modal.
+         */
+        function setupModalHandlers() {
+            const modal = document.getElementById('detail-modal');
+            const closeButton = document.querySelector('.close-button');
+
+            if (closeButton) {
+                closeButton.addEventListener('click', () => {
+                    closeModal();
+                });
+            }
+
+            // Fechar modal ao clicar fora do conteúdo
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+
+            // Fechar modal ao pressionar ESC
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('show')) {
+                    closeModal();
+                }
+            });
+        }
+
+        /**
+         * Fecha o modal e restaura o scroll da página
+         */
+        function closeModal() {
+            const modal = document.getElementById('detail-modal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        // ===== SISTEMA DE FAVORITOS =====
+        const FAVORITES_KEY = 'jaguariaiva_favorites';
+
+        function getFavorites() {
+            const favorites = localStorage.getItem(FAVORITES_KEY);
+            return favorites ? JSON.parse(favorites) : [];
+        }
+
+        function saveFavorites(favorites) {
+            localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites));
+        }
+
+        function isFavorite(poiId) {
+            return getFavorites().includes(poiId);
+        }
+
+        function toggleFavorite(poiId) {
+            const favorites = getFavorites();
+            const index = favorites.indexOf(poiId);
+
+            if (index > -1) {
+                favorites.splice(index, 1);
+            } else {
+                favorites.push(poiId);
+            }
+
+            saveFavorites(favorites);
+            updateFavoriteButtons(poiId);
+        }
+
+        function updateFavoriteButtons(poiId) {
+            const buttons = document.querySelectorAll(`[data-poi-id="${poiId}"]`);
+            const isFav = isFavorite(poiId);
+
+            buttons.forEach(btn => {
+                if (isFav) {
+                    btn.classList.add('favorited');
+                    btn.innerHTML = '<i class="fas fa-heart"></i>';
+                } else {
+                    btn.classList.remove('favorited');
+                    btn.innerHTML = '<i class="far fa-heart"></i>';
+                }
+            });
+        }
+
+        function initializeFavoriteButtons() {
+            const favoriteButtons = document.querySelectorAll('.btn-favorite');
+            
+            favoriteButtons.forEach(btn => {
+                const poiId = btn.getAttribute('data-poi-id');
+                if (isFavorite(poiId)) {
+                    btn.classList.add('favorited');
+                    btn.innerHTML = '<i class="fas fa-heart"></i>';
+                } else {
+                    btn.innerHTML = '<i class="far fa-heart"></i>';
+                }
+            });
+        }
+
+        // ===== SISTEMA DE SUPORTE DE TURISMO VIA WHATSAPP =====
+        const WHATSAPP_NUMBER = '5543988601609';
+
+        const SUPPORT_QUESTIONS = [
+            {
+                icon: 'fas fa-clock',
+                text: 'Esse lugar fica aberto o dia todo?',
+                message: 'Olá! Gostaria de saber se o ponto turístico fica aberto o dia todo?'
+            },
+            {
+                icon: 'fas fa-money-bill-wave',
+                text: 'Qual é o valor da entrada?',
+                message: 'Olá! Qual é o valor da entrada para este ponto turístico?'
+            },
+            {
+                icon: 'fas fa-map-signs',
+                text: 'Como chego até lá?',
+                message: 'Olá! Gostaria de informações sobre como chegar até este ponto turístico.'
+            },
+            {
+                icon: 'fas fa-utensils',
+                text: 'Tem restaurante ou lanchonete?',
+                message: 'Olá! Tem restaurante ou lanchonete neste local?'
+            },
+            {
+                icon: 'fas fa-parking',
+                text: 'Tem estacionamento?',
+                message: 'Olá! Gostaria de saber se tem estacionamento disponível.'
+            },
+            {
+                icon: 'fas fa-question-circle',
+                text: 'Outra pergunta',
+                message: 'Olá! Tenho uma pergunta sobre os pontos turísticos de Jaguariaíva.'
+            }
+        ];
+
+        function openSupportModal() {
+            const modal = document.getElementById('support-modal');
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+            renderSupportQuestions();
+        }
+
+        function closeSupportModal() {
+            const modal = document.getElementById('support-modal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        function renderSupportQuestions() {
+            const questionsContainer = document.getElementById('support-questions');
+            questionsContainer.innerHTML = '';
+
+            SUPPORT_QUESTIONS.forEach((question, index) => {
+                const button = document.createElement('button');
+                button.className = 'support-question-btn';
+                button.innerHTML = `
+                    <i class="${question.icon}"></i>
+                    ${question.text}
+                `;
+                button.onclick = () => sendWhatsAppMessage(question.message);
+                questionsContainer.appendChild(button);
+            });
+        }
+
+        function sendWhatsAppMessage(message) {
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            window.open(whatsappLink, '_blank');
+            closeSupportModal();
+        }
+
+        function setupSupportModalHandlers() {
+            const modal = document.getElementById('support-modal');
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeSupportModal();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('show')) {
+                    closeSupportModal();
+                }
+            });
+        }
+
+        // ===== SISTEMA DE HISTÓRIA =====
+        function openHistoryModal() {
+            const modal = document.getElementById('history-modal');
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeHistoryModal() {
+            const modal = document.getElementById('history-modal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        function setupHistoryModalHandlers() {
+            const modal = document.getElementById('history-modal');
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeHistoryModal();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('show')) {
+                    closeHistoryModal();
+                }
+            });
+        }
+
+        // ===== SISTEMA DE TRANSPORTE =====
+        const JC_TRANSPORTES_NUMBER = '5543988601609';
+
+        function openTransportModal() {
+            const modal = document.getElementById('transport-modal');
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTransportModal() {
+            const modal = document.getElementById('transport-modal');
+            modal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+
+        function requestRide() {
+            const message = encodeURIComponent(
+                'Olá! Gostaria de solicitar uma corrida em Jaguariaíva. Vi seu contato no aplicativo Clickcidade. Pode me ajudar?'
+            );
+            
+            const whatsappLink = `https://wa.me/${JC_TRANSPORTES_NUMBER}?text=${message}`;
+            window.open(whatsappLink, '_blank');
+            closeTransportModal();
+        }
+
+        function showTransportModalOnLoad() {
+            if (!sessionStorage.getItem('transportModalShown')) {
+                setTimeout(() => {
+                    openTransportModal();
+                    sessionStorage.setItem('transportModalShown', 'true');
+                }, 2000);
+            }
+        }
+
+        function setupTransportModalHandlers() {
+            const modal = document.getElementById('transport-modal');
+
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeTransportModal();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && modal.classList.contains('show')) {
+                    closeTransportModal();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
