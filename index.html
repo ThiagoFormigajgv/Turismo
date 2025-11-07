@@ -1996,12 +1996,12 @@
         }
 
         function showTransportModalOnLoad() {
-            if (!sessionStorage.getItem('transportModalShown')) {
-                setTimeout(() => {
-                    openTransportModal();
-                    sessionStorage.setItem('transportModalShown', 'true');
-                }, 2000);
-            }
+            // Removendo a verificação de sessionStorage para garantir que a modal apareça sempre
+            // setTimeout é mantido para dar tempo de carregar a página
+            setTimeout(() => {
+                openTransportModal();
+                // sessionStorage.setItem('transportModalShown', 'true'); // Linha comentada para que a modal apareça sempre
+            }, 2000);
         }
 
         function setupTransportModalHandlers() {
@@ -2021,4 +2021,4 @@
         }
     </script>
 </body>
-</html>
+</html>            
